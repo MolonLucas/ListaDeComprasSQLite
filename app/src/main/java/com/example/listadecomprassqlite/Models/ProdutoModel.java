@@ -3,6 +3,9 @@ package com.example.listadecomprassqlite.Models;
 import java.util.List;
 
 public class ProdutoModel {
+    public ProdutoModel(){
+
+    }
     public ProdutoModel(Integer id, String nome, double valor){
         setId(id);
         setNome(nome);
