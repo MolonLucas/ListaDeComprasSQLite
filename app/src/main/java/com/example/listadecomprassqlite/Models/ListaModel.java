@@ -3,6 +3,7 @@ package com.example.listadecomprassqlite.Models;
 import java.util.List;
 
 public class ListaModel {
+    //comentario teste para commitar
     public ListaModel(){
 
     }
