@@ -24,8 +24,8 @@
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="290dp"
+        android:layout_height="299dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,6 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Exemplo de item de lista de compras com CardView -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -55,7 +54,7 @@
                         android:id="@+id/tvListName1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Lista Mercado"
+                        android:text="Lista"
                         android:textColor="@android:color/black"
                         android:textSize="18sp" />
 
@@ -63,7 +62,7 @@
                         android:id="@+id/tvListDate1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Data: 20/06/2025"
+                        android:text="Data:"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
 
@@ -71,7 +70,7 @@
                         android:id="@+id/tvTotalPrice1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Total: R$ 35,00"
+                        android:text="Total:"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
 
@@ -95,7 +94,7 @@
                         android:id="@+id/tvListName2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Lista Mercado"
+                        android:text="Lista"
                         android:textColor="@android:color/black"
                         android:textSize="18sp" />
 
@@ -103,7 +102,7 @@
                         android:id="@+id/tvListDate2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Data: 20/06/2025"
+                        android:text="Data:"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
 
@@ -111,7 +110,7 @@
                         android:id="@+id/tvTotalPrice2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Total: R$ 35,00"
+                        android:text="Total:"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
 
@@ -135,7 +134,7 @@
                         android:id="@+id/tvListName3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Lista Mercado"
+                        android:text="Lista"
                         android:textColor="@android:color/black"
                         android:textSize="18sp" />
 
@@ -143,7 +142,7 @@
                         android:id="@+id/tvListDate3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Data: 20/06/2025"
+                        android:text="Data:"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
 
@@ -151,7 +150,7 @@
                         android:id="@+id/tvTotalPrice3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Total: R$ 35,00"
+                        android:text="Total:"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
 
