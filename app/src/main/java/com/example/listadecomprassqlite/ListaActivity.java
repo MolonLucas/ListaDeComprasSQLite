@@ -17,7 +17,7 @@ import com.example.listadecomprassqlite.Repository.ListaRepository;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class ListaActivity extends AppCompatActivity {
     private ListaRepository listaRepository;
     private RecyclerView recyclerView;
     private ListaAdapter listaAdapter;
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btnCreateNewList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AddListaActivity.class);
+                Intent intent = new Intent(ListaActivity.this, AddListaActivity.class);
                 startActivity(intent);
             }
         });
@@ -57,10 +57,10 @@ public class MainActivity extends AppCompatActivity {
         listas = listaRepository.getAll();
         if (listas != null && !listas.isEmpty()) {
             for (ListaModel lista : listas) {
-                Log.d("MainActivity", "Lista carregada: " + lista.getNome());
+                Log.d("ListaActivity", "Lista carregada: " + lista.getNome());
             }
         } else {
-            Log.d("MainActivity", "Nenhuma lista carregada");
+            Log.d("ListaActivity", "Nenhuma lista carregada");
         }
 
         if (listaAdapter == null) {
@@ -73,10 +73,9 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onItemClick(int position) {
-                    Log.d("MainActivity", "Item clicado na posição: " + position);
-                    Intent intent = new Intent(MainActivity.this, ListaDetailsActivity.class);
+                    // Iniciar a atividade de detalhes da lista
+                    Intent intent = new Intent(ListaActivity.this, ListaDetailsActivity.class);
                     intent.putExtra("listaId", listas.get(position).getId());
-                    Log.d("MainActivity", "Iniciando ListaDetailsActivity com listaId: " + listas.get(position).getId());
                     startActivity(intent);
                 }
             });
@@ -94,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
             listas.remove(position);
             listaAdapter.notifyItemRemoved(position);
         } catch (Exception e) {
-            Log.e("MainActivity", "Erro ao deletar lista", e);
+            Log.e("ListaActivity", "Erro ao deletar lista", e);
         }
     }
 
